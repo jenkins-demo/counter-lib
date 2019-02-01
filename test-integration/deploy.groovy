@@ -5,7 +5,7 @@ pipeline {
             steps { 
                 script {
                     def lib = library("test-lib").com.cloudbees.demo
-                    lib.Counter.new(steps)
+                    lib.Counter.new(steps: steps)
                 } 
             } 
         } 
